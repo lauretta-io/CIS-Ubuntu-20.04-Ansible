@@ -1,0 +1,13 @@
+---
+- hosts: servers
+  become: true
+  become_method: su
+  become_user: root
+  tasks:
+    - name: Run whoami command
+      command: whoami
+      register: whoami_output
+
+    - name: Display whoami output
+      debug:
+        var: whoami_output.stdout
