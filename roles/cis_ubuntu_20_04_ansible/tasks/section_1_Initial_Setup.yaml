@@ -426,6 +426,7 @@
       modprobe:
         name: usb-storage
         state: absent
+      ignore_errors: yes
   when: disable_usb
   tags:
     - section1

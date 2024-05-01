@@ -2,12 +2,12 @@
 - include: section_1_Initial_Setup.yaml
   become: true
 - include: section_2_Services.yaml
-  become: false
+  become: true
 - include: section_3_Network_Configuration.yaml
-  become: false
+  become: true
 - include: section_4_Logging_and_Auditing.yaml
-  become: false
+  become: true
 - include: section_5_Access_Authentication_and_Authorization.yaml
-  become: false
+  become: true
 - include: section_6_System_Maintenance.yaml
-  become: false
+  become: true
